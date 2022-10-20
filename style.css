@@ -1,0 +1,115 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+button {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    filter: brightness(90%);
+}
+
+/* body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+} */
+
+#page-container {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+    /* Footer height */
+}
+
+#header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
+    position: relative;
+    z-index:2;
+}
+
+#logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#header #log-in {
+    font-size: 1.25rem;
+    background-color: #efefef;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+#main-container {
+    /* display: flex; */
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: #f0eef1;
+    padding: 2rem;
+    height: 100%;
+    text-align: center;
+}
+
+#main-container #add-book {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 3rem;
+    width: 10rem;
+}
+
+#books-grid {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+
+.book-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    gap: 1.25rem;
+    justify-content: space-between;
+    padding: 1.25rem;
+}
+
+button.remove {
+    background-color: #efefef;
+}
+
+#footer {
+    background-color: #f0eef1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    /* Footer height */
+}
