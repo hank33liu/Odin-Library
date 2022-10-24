@@ -39,6 +39,20 @@
                 <div> Last updated October 2022</div>
             </div>
         </div>
+        <div class="overlay" id="modal-overlay"></div>
+        <div class="modal" id="addBookModal">
+            <form id="addBookForm">
+                <div class="modal-title">Add new book</div>
+                <input type="text" class="input" placeholder="Title" required>
+                <input type="text" class="input" placeholder="Author" required>
+                <input type="number" class="input" placeholder="Pages" required>
+                <div class="is-read-query">
+                    <label for="is-read-query">Have you read it?</label>
+                    <input class="checkbox" type="checkbox">
+                </div>
+                <button class="submit">Submit</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
